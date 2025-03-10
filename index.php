@@ -8,6 +8,24 @@
 <body>
     <h1>DATA MAHASISWA</h1>
     <br>
-    <?php echo "ini data mahasiswa";?>
+    <table border= "1" cellspacing ="0" cellpadding = "1">
+        <thead> 
+            <th>No</th>
+            <th>NIM</th>
+            <th>Nama</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>E02032</td>
+            <td>Hasna</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>E02033</td>
+            <td>maysa</td>
+        </tr>
+</tbody>
+    </table>
 </body>
 </html>
