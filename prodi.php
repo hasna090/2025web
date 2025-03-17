@@ -4,8 +4,6 @@ include "koneksi.php";
 $query = "SELECT * FROM prodi";
 $data = ambildata($query);
 
-
-
 ?>
 
 <!DOCTYPE html>
