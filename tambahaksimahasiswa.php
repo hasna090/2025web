@@ -1,7 +1,6 @@
 <?php
 include "koneksi.php";
 
-
 $nim = $_POST["nim"];
 $nama = $_POST["nama"];
 $tanggalLahir = $_POST["tanggalLahir"];
