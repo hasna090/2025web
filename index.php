@@ -16,6 +16,8 @@ $data = ambildata($query);
 </head>
 <body>
     <h1>Data Mahasiswa</h1>
+    <br> 
+    <a href ="tambahmahasiswa.php">Tambah</a>
 <table border= "1" cellspacing ="0" cellpadding = "1">
         <thead> 
             <th>No</th>
@@ -37,7 +39,7 @@ $data = ambildata($query);
             <td><?php echo $d["tanggalLahir"] ?></td>
             <td><?php echo $d["telp"] ?></td>
             <td><?php echo $d["email"] ?></td>
-            <td><?php echo $d["id"] ?></td>
+            <td><?php echo $d["idprodi"] ?></td>
           
         </tr>
             <?php endforeach;?>    

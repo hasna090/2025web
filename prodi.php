@@ -35,7 +35,7 @@ $data = ambildata($query);
             <td><?php echo $d["kaprodi"] ?></td>
             <td><?php echo $d["jurusan"] ?></td>
         </tr>
-            <?php endforeach;?>    
+            <?php endforeach; ?>    
 </tbody>
     </table>
 </body>
