@@ -9,7 +9,7 @@ $query = "SELECT m.*, p.nama namaProdi FROM mahasiswa m join prodi p ON m.idprod
 $data = ambildata($query);
 
 include "template/header.php";
-include "template/sidebar.php"
+include "template/sidebar.php";
 
 ?>
 <!--begin::App Main-->
@@ -45,6 +45,9 @@ include "template/sidebar.php"
                     <div class="card mb-4">
                         <div class="card-header">
                             <h3 class="card-title">Data Mahasiswa</h3>
+                            <div class="card-tools">
+                                <a href="tambahmahasiswa.php" class="btn btn-primary">Tambah</a>
+                            </div>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -73,9 +76,11 @@ include "template/sidebar.php"
                                             <td><?php echo $d["telp"] ?></td>
                                             <td><?php echo $d["email"] ?></td>
                                             <td><?php echo $d["namaProdi"] ?></td>
-                                            <td><a class="btn btn-danger" href="deletemahasiswa.php?nim=<?= $d['nim']; ?>"
-                                                    onclick="return confirm('Yakin ingin hapus?')">Delete</a>
-                                                <a class="btn btn-warning" href=" editmahasiswa.php?nim=<?= $d['nim']; ?>">Edit</a>
+                                            <td>
+                                                <div style="display: flex; gap: 5px">
+                                                    <a class="btn btn-danger" href="deletemahasiswa.php?nim=<?= $d['nim']; ?>"
+                                                        onclick="return confirm('Yakin ingin hapus?')">Delete</a>
+                                                    <a class="btn btn-warning" href=" editmahasiswa.php?nim=<?= $d['nim']; ?>">Edit</a>
                                             </td>
 
                                         </tr>
@@ -99,8 +104,6 @@ include "template/sidebar.php"
     <!--end::App Content-->
 </main>
 <!--end::App Main-->
-
-
 
 <?php
 include "template/footer.php";

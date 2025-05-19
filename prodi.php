@@ -5,7 +5,7 @@ $query = "SELECT * FROM prodi";
 $data = ambildata($query);
 
 include "template/header.php";
-include "template/sidebar.php"
+include "template/sidebar.php";
 ?>
 <!--begin::App Main-->
 <main class="app-main">
@@ -29,6 +29,7 @@ include "template/sidebar.php"
         </div>
         <!--end::Container-->
     </div>
+    <!--end::App Main-->
     <div class="row">
         <div class="col-md-12">
             <div class="card mb-4">
