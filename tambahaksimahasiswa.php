@@ -27,8 +27,6 @@ $hashPass = password_hash($password, PASSWORD_DEFAULT);
 $query = "INSERT INTO mahasiswa (nim, nama, tanggalLahir, telp, email, password, foto, idprodi) VALUES 
 ('$nim', '$nama', '$tanggalLahir', '$telp', '$email', '$hashPass', '$namaFileBaru', '$idprodi')";
 
-var_dump($query);
-die;
 
 mysqli_query($conn, $query);
 
